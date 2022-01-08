@@ -19,7 +19,7 @@ connection.end()
 
 
 app.get('/', (req,res) => {
-    var response = '<h1>Full Cycle</h1>'
+    var response = '<h1>Full Cycle Rocks!</h1>'
     const conn = mysql.createConnection(config)
     const sql = `SELECT name FROM people`
     conn.query(sql, function (err, rows, fields) {
